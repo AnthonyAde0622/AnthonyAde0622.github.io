@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>A.R.F.S</title>
+ </head>
+ <style>
+     body{
+       background-color: rgb(255, 128, 128);
+       color: chartreuse;
+       
+         
+     };
+     
+  
+
+  
+    </style>
+ <body> 
+  
+   <footer><h1><a href = "Home.html">A.R.F.S</a> </h1></footer>
+     
+    <ol>
+      <li>Someone's Name1: <input type="text" id="person2"></li>
+      <li class= cen>A Past Tense Verb: <input type="text" id="verb"></li>
+      <li>Someone's Name2: <input type="text" id="person"></li>
+    </ol>
+     
+    <button id="lib-button">Lib it!</button>
+      
+    <p>Generated story: 
+    <span id="story"></span>
+    </p>
+   <footer><strong><em id=New>New Sentences every wendnesday</em></strong></footer>
+   <footer> <a href="Hairy%20Thing.html">Hairy Animal Story, </a><a href ='Rabbid%20Animal.html'>Rabbid Animal Story, </a><a href="Disobedient%20Student.html">Disobedient Student Story</a> </footer>
+ 
+    <script>
+        var libButton = document.getElementById('lib-button');
+        var libIt = function() {
+            var storyDiv = document.getElementById("story");
+            var verb = document.getElementById('verb').value;
+            var sm = document.getElementById('person').value;
+            var sm2 = document.getElementById('person2').value;
+          
+          storyDiv.innerHTML = sm2  +' "Leave my Class Now, and detention for 4 hours" said '+ sm + '.I '+ verb + ' up to her/his face '+ sm2 + ' said "No, I am not doing that '+ sm +' says "yes you are". '+ sm2 + ' says MAKE ME" GROOOOOOWWWWLLLLL '+ sm + ' says "ok you no wat you can get a 100 lollypops too." ';
+            
+        };
+        libButton.addEventListener('click', libIt);
+      
+      
+        
+    </script>
+  
+ </body>
+</html>

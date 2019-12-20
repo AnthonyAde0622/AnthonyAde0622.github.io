@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>A.R.F.S</title>
+ </head>
+ <style>
+     body{
+       background-color: chartreuse;
+       color: rgb(255, 128, 128);
+         
+     };
+
+  
+    </style>
+ <body> 
+  
+    
+   <a href ="Home.html"><h1>A.R.F.S</h1></a>
+     
+    <ol>
+      <li class= cen>A Living Noun: <input type="text" id="noun"></li>
+      <li class= cen>A Past Tense Verb: <input type="text" id="verb"></li>
+      <li>Someone's Name: <input type="text" id="person"></li>
+    </ol>
+     
+    <button id="lib-button">Create</button>
+      
+    <p>Generated story: 
+    <span id="story"></span>
+    </p>
+   <footer><strong><em id=New>New Sentences every wendnesday</em></strong></footer>
+   <footer> <a href="Hairy%20Thing.html">Hairy Thing, </a><a href ='Rabbid%20Animal.html'>Rabbid Animal, </a><a href = "Disobedient%20Student.html">Disobedient Student</a> </footer>
+ 
+    <script>
+        var libButton = document.getElementById('lib-button');
+        var libIt = function() {
+             var storyDiv = document.getElementById("story");
+            var verb =document.getElementById('verb').value;
+            var sm = document.getElementById('person').value;
+            var noun= document.getElementById('noun').value;
+          
+          storyDiv.innerHTML = noun  +' was so hairy and so disgusting that half of my class '+ verb + ' away '+ sm + ' took it and threw it though the window. Honestly I kinda liked it, that is why I did absolutely NOTHING ';
+            
+        };
+        libButton.addEventListener('click', libIt);
+      
+        
+    </script>
+  
+ </body>
+</html>
